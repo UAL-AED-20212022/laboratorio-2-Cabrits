@@ -1,4 +1,4 @@
-from models.Node import Node
+from src.Node import Node
 
 class LinkedList:
     def __init__(self):
@@ -33,7 +33,6 @@ class LinkedList:
     
     def insert_after_item(self, x, data):
         n = self.start_node
-        print(n.ref)
         while n is not None:
             if n.item == x:
                 break
